@@ -1,0 +1,233 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: palevioletred;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+header #texto h1{
+    color: rgb(202, 63, 109);
+    font-size: 60px;
+    font-weight: 600;    
+}
+
+header  #texto span{
+    color: #fff;
+    font-size: 15px;
+    padding-left: 44px;
+    font-weight: 600;
+}
+
+header ul{
+    margin-top: 10px;
+    display: flex;
+    list-style: none;
+}
+
+header ul li{
+    margin: 20px 20px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+header ul li a{
+    color: #fff;
+}
+
+header ul li a:hover{
+    color: rgb(223, 165, 184);
+}
+
+main div{
+    display: flex;
+    justify-content: space-around;
+}
+
+main div#principal p{
+    margin: 100px 100px;
+    font-size: 30px;
+    max-width: 300px;
+    color: rgb(228, 21, 90);
+}
+
+main section{
+    background-color:  rgb(228, 21, 90);
+    border-radius: 10px; 
+    padding:20px  20px 0px 20px;
+}
+
+main #outubro-rosa-informacao{
+    background-color: palevioletred;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+}
+
+main #outubro-rosa-informacao h2{
+    color: rgb(228, 21, 90);
+}
+
+main #outubro-rosa-informacao p{
+    color: #fff;
+    padding: 20px 70px 0px 70px;
+    font-size: 18px;
+}
+
+
+
+main #Risco{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+    margin-top: 40px;
+}
+
+main #Risco h2{
+    color: #fff;
+}
+
+main #Risco nav{
+    background-color: palevioletred;
+    border-radius: 20px;
+    margin-top: 25px;
+    list-style: none;
+    padding: 20px 0px;
+}
+
+
+main #Risco li{
+    color: #fff;
+    padding: 20px 70px 0px 70px;
+    font-size: 18px;
+}
+
+main #Risco li span{
+    font-weight: 700;
+}
+
+main #Risco #aparecer{
+    display: none;
+    flex-direction: column;
+    transition: all 1s;
+}  
+
+main .click{
+    display: block;
+    color: rgb(228, 21, 90);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.click:hover{
+    text-decoration: underline;
+}
+
+main #avanco{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+main #avanco h2{
+    color: #fff;
+    text-align: center;
+}
+
+main #avanco nav{
+    background-color: palevioletred;
+    border-radius: 20px;
+    margin-top: 15px;
+    list-style: none;
+    padding: 25px 50px;
+}
+
+main #avanco nav .weight{
+   color: #fff;
+   font-weight: 900;
+}
+
+main #avanco nav li{
+    display: flex;
+   margin-top: 40px;
+}
+
+main #avanco nav li p{
+    font-weight: 500;
+    padding-top: 50px;
+    padding-left: 10px;
+    color: #fff;
+}
+
+main #avanco nav li div p{
+    font-weight: 500;
+    padding-top: 50px;
+    color: #fff;
+}
+
+main #avanco nav li img{
+    width: 300px;
+    border-radius: 10px;
+    margin: 0px 10px;
+}
+
+
+a{
+    color: rgb(228, 21, 90);
+    text-decoration: none;
+}
+
+
+@media (max-width: 736px) {
+    header ul{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+    }
+    
+    
+    main div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    main div#principal p{
+        text-align: center;
+        margin: 00px 100px;
+        margin-top: 35px;
+        font-size: 30px;
+        max-width: 300px;
+        color: rgb(228, 21, 90);
+    }
+
+    main div#principal img{
+       margin: auto;
+    }
+
+    main #avanco nav li div.trocar {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 30px;
+    }
+
+    main #avanco nav li  {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    main #avanco nav li div p{
+        font-weight: 500;
+        padding-top: 20px;
+        color: #fff;
+    }
+}
